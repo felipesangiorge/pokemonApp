@@ -1,0 +1,43 @@
+<resources>
+    <!-- Error Codes -->
+    <string name="errorcode_generic_unknow">Unknow error</string>
+    <string name="errorcode_generic">Generic Error</string>
+    <string name="errorcode_generic_network">Generic Error</string>
+    <string name="errorcode_empty_body">Empty Body</string>
+
+    <!-- POKEMON DETAILS -->
+    <string name="pokemon_details_label_main_info_title">Principais Informações</string>
+    <string name="pokemon_details_label_height">Altura</string>
+    <string name="pokemon_details_label_weight">Peso</string>
+    <string name="pokemon_details_label_base_experience">Experiencia</string>
+    <string name="pokemon_details_label_default_specie">Especie padrão</string>
+    <string name="pokemon_details_label_move_abilities_title">Movimentos / Habilidades</string>
+
+    <!-- INFO -->
+    <string name="pokemon_info_label_creator">Criador:</string>
+    <string name="pokemon_info_label_profession">Profissão:</string>
+    <string name="pokemon_info_label_age">Idade:</string>
+    <string name="pokemon_info_label_linkedin">Linkedin:</string>
+    <string name="pokemon_info_label_description">Descrição</string>
+
+    <string name="pokemon_info_value_creator">Felipe Santos Avelar Sangiorge</string>
+    <string name="pokemon_info_value_profession">Android Developer</string>
+    <string name="pokemon_info_value_age">26</string>
+    <string name="pokemon_info_value_linkedin">https://www.linkedin.com/in/felipe-sangiorge-593743105/</string>
+    <string name="pokemon_info_value_description">Essa é uma aplicação exemplo que utiliza a API pokemon, para procurar Pokemons e mostrar alguns de seus atributos. Usando o padrão MVVM para efetuar as chamadas a API e live data para observar os resultados.</string>
+
+
+    <string name="default_text_hint">…</string>
+    <string name="default_pokemon">pikachu</string>
+    <string name="app_name">Pokemonapp</string>
+    <string name="title_list">Lista</string>
+    <string name="title_pokemon_detail">Pokemon</string>
+    <string name="title_info">Informação</string>
+
+    <string name="pokemon_details_header_move">Movimentos</string>
+    <string name="pokemon_details_header_abilities">Habilidades</string>
+
+    <string name="default_language_first">pt_PT</string>
+    <string name="default_language_first_min">pt_pt</string>
+    <string name="default_language_second">en_EN</string>
+</resources>

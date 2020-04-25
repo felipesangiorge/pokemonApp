@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_pokemon_list"
+        android:title="@string/title_list"
+        />
+
+    <item
+        android:id="@+id/pokemon_details_fragment"
+        android:icon="@drawable/ic_pokemon_details"
+        android:title="@string/title_pokemon_detail"
+        />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_pokemon_info"
+        android:title="@string/title_info"
+        />
+
+</menu>

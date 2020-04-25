@@ -1,0 +1,43 @@
+<resources>
+    <!-- Error Codes -->
+    <string name="errorcode_generic_unknow">Unknow error</string>
+    <string name="errorcode_generic">Generic Error</string>
+    <string name="errorcode_generic_network">Generic Error</string>
+    <string name="errorcode_empty_body">Empty Body</string>
+
+    <!-- POKEMON DETAILS -->
+    <string name="pokemon_details_label_main_info_title">Main Info</string>
+    <string name="pokemon_details_label_height">Height</string>
+    <string name="pokemon_details_label_weight">Weight</string>
+    <string name="pokemon_details_label_base_experience">Base Experience</string>
+    <string name="pokemon_details_label_default_specie">Default Specie</string>
+    <string name="pokemon_details_label_move_abilities_title">Move / Abilities</string>
+
+    <!-- INFO -->
+    <string name="pokemon_info_label_creator">Creator:</string>
+    <string name="pokemon_info_label_profession">Profession:</string>
+    <string name="pokemon_info_label_age">Age:</string>
+    <string name="pokemon_info_label_linkedin">Linkedin:</string>
+    <string name="pokemon_info_label_description">Description</string>
+
+    <string name="pokemon_info_value_creator">Felipe Santos Avelar Sangiorge</string>
+    <string name="pokemon_info_value_profession">Android Developer</string>
+    <string name="pokemon_info_value_age">26</string>
+    <string name="pokemon_info_value_linkedin">https://www.linkedin.com/in/felipe-sangiorge-593743105/</string>
+    <string name="pokemon_info_value_description">This is a sample app that uses the pokemon API, for search Pokemons and show some of attributes. Using the MVVM Pattern to handle api call and LiveData to observe the results.</string>
+
+
+    <string name="default_text_hint">…</string>
+    <string name="default_pokemon">pikachu</string>
+    <string name="app_name">Pokemonapp</string>
+    <string name="title_list">List</string>
+    <string name="title_pokemon_detail">Pokemon</string>
+    <string name="title_info">Info</string>
+
+    <string name="pokemon_details_header_move">Moves</string>
+    <string name="pokemon_details_header_abilities">Abilities</string>
+
+    <string name="default_language_first">pt_PT</string>
+    <string name="default_language_first_min">pt_pt</string>
+    <string name="default_language_second">en_EN</string>
+</resources>
