@@ -3,12 +3,11 @@ package com.example.pokemonapp.livedata
 import android.os.Looper
 import androidx.lifecycle.MediatorLiveData
 
-@Suppress("RedundantOverride") // We actually need this to force value to be NonNull
+@Suppress("RedundantOverride")
 class NonnullMediatorLiveData<T : Any>(
     private val data: T
 ) : MediatorLiveData<T>() {
     init {
-        // use post instead of set since this can be created on any thread
         if (Looper.myLooper() == Looper.getMainLooper()) {
             value = data
         } else {

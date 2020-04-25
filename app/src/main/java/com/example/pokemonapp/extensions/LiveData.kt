@@ -14,8 +14,6 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.properties.Delegates
 
-
-// https://medium.com/@BladeCoder/architecture-components-pitfalls-part-1-9300dd969808
 @MainThread
 fun <T> LiveData<T>.reObserve(owner: LifecycleOwner, observer: Observer<T>) {
     removeObserver(observer)
@@ -131,42 +129,6 @@ fun <T : Any> LiveData<T>.throttleWithTimeoutOld(
 
     return mediator
 }
-
-//@MainThread
-//fun <T : Any> LiveData<T>.throttleWithTimeout(
-//    delay: Long,
-//    timeUnit: TimeUnit,
-//    handler: Handler
-//): LiveData<T> {
-//    val mediator = MediatorLiveData<T>()
-//
-//    val lastEmissionTimeUnit = TimeUnit.MILLISECONDS
-//    var lastEmission: Long = 0
-//    var currentValue: Optional<T> by Delegates.notNull()
-//
-//    val callback = Runnable {
-//        val value = currentValue.orNull() ?: return@Runnable
-//
-//        lastEmission = System.currentTimeMillis()
-//        mediator.value = value
-//    }
-//
-//    mediator.addSource(this) {
-//        handler.removeCallbacks(callback)
-//
-//        currentValue = Optional.ofNullable(it)
-//
-//        val delayMillis = timeUnit.toMillis(delay)
-//        val timeElapsed = System.currentTimeMillis() - lastEmissionTimeUnit.toMillis(lastEmission)
-//        if (timeElapsed > delayMillis) {
-//            handler.post(callback)
-//        } else {
-//            handler.postDelayed(callback, delayMillis - timeElapsed)
-//        }
-//    }
-//
-//    return mediator
-//}
 
 @MainThread
 fun <T> List<LiveData<T>>.waitForAllOnce(observer: Observer<List<T?>>) {
@@ -289,25 +251,6 @@ fun <T> LiveData<T>.ignoreFirstValueWhen(predicate: (T) -> Boolean): LiveData<T>
 
     return mediator
 }
-
-
-//fun <T> LiveData<Resource<T>>.doOnSuccess(
-//    executor: Executor? = null,
-//    predicate: (Resource.Success<T>) -> Unit
-//): LiveData<Resource<T>> = when (executor) {
-//    null -> this.doOnNext { if (it is Resource.Success) predicate(it) }
-//    else -> this.switchMap {
-//        when (it) {
-//            is Resource.Success -> MutableLiveData<Resource<T>>().apply {
-//                executor.execute {
-//                    predicate(it)
-//                    postValue(it)
-//                }
-//            }
-//            else -> liveDataOf(it)
-//        }
-//    }
-//}
 
 
 
